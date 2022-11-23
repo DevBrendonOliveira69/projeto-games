@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&display=swap');
+:root{
+    --font-padrao: 'Share Tech Mono', monospace;
+    --font-destaque:'Bebas Neue', cursive;
+    --cor1:#62b2ebd2;
+    --cor2:#087DD1;
+    --cor3:#065F9E;
+    --cor4:#033152;
+    --cor5:#344552;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-image: url(../imagens/istockphoto-1207017851-612x612.jpg);
+    background-color: black;
+    background-position: 100%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+    
+    
+}
+header{
+    background-image: url(../imagens/controles-wallpaper.jpg);
+    text-align: center;
+    padding: 10px;
+    min-height: 100px;
+  
+    
+}
+header > h1{color:rgb(255, 255, 255);
+    font-family: var(--font-destaque);
+    font-weight:bold ;
+    font-size: 2.1em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.425);
+    margin: 10px;
+}
+header > p{
+    color:rgb(255, 255, 255) ;
+    font-size: 1.1em;
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.425);
+    margin-bottom: 15px;
+}
+nav{
+    background-image: linear-gradient(to bottom,#7A7A7A,#323232);
+    text-align: left;
+}
+nav ul{ 
+
+    display: inline-flex;
+    list-style: none;
+}
+nav ul li{
+    width: 80px;
+    margin: 5px;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.menu-1{
+    display: none;
+    border-radius: 15px;
+    
+}
+nav ul li:hover .menu-1{
+    display: block;
+    position: absolute;
+    background-color:#323232;
+    margin-top: 15px;
+    margin-left: -135px;
+    color: white;
+    border-radius: 15px;
+}
+nav ul li:hover .menu-1 ul{
+    display: block;  
+}
+nav ul li:hover .menu-1 ul li{
+    width: 130px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.7s; 
+    margin: 5px;
+}
+nav ul li:hover .menu-1 ul li:hover{
+    background-color:var(--cor5);
+}
+.menu-2{
+    display: none;
+    margin: 10px;
+}
+.hover-menu:hover .menu-2{
+    display: block;
+    border-radius: 15px;
+    position: absolute;
+    width: 170px;
+    margin-top: -40px;
+    margin-left: 148px;
+    background-color:#323232 ;
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(236, 233, 233, 0.562);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+main h1{
+    color: var(--cor5);
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.301);
+    text-align: center;
+}
+main h2{ 
+    color: var(--cor5);
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.301);
+    text-align: center;
+}
+main img{
+    display: block;
+    margin: auto;
+}
+main strong{
+    color: var(--cor5);
+    font-family: var(--font-padrao);
+}
+main p{
+    text-indent: 20px;
+    text-align: justify;
+}
+main a{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #344552;
+    padding: 2px;
+}
+footer{
+    background-color: #323232;
+    color:whitesmoke;
+    text-align: center;
+}
