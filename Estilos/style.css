@@ -158,3 +158,5 @@ footer{
     color:whitesmoke;
     text-align: center;
 }
+footer a{text-decoration: underline;
+color: white;}
